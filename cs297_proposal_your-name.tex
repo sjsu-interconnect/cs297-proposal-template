@@ -1,0 +1,133 @@
+\documentclass[11pt,onecolumn]{article}
+
+\usepackage{geometry}
+\geometry{top=0.7in, bottom=1in, left=0.7in, right=0.7in}
+
+\usepackage{graphicx}
+
+\usepackage{tikz}
+
+\usepackage[colorlinks = true, citecolor = blue]{hyperref}
+
+% math lib
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+% theorem
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+\newtheorem{corollary}{Corollary}
+\newtheorem{problem}{Problem}
+\newtheorem{definition}{Definition}
+
+% operators
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand\ceiling[1]{\left\lceil #1 \right\rceil}
+
+% empty set
+\usepackage{amssymb}
+\let\emptyset=\varnothing
+
+% algorithms
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
+\begin{document}
+
+\title{Title}
+\def\myname{Your Name}
+\def\adv{Dr. Genya Ishigaki}
+\def\advemail{genya.ishigaki@sjsu.edu}
+\def\comone{Dr. Edsger W. Dijkstra}
+\def\comoneemail{sample@sjsu.edu}
+\def\comtwo{Dr. Claude Shannon}
+\def\comtwoemail{sample@sjsu.edu}
+\date{CS 297 - Fall 2022}
+
+
+\author{
+    \myname\\ 
+    \\
+    \textbf{Committee Members}\\
+    \adv\ (Advisor, \advemail)\\
+    \comone\ (\comoneemail)\\
+    \comtwo\ (\comtwoemail)
+}
+
+\maketitle
+
+
+% -------------------------------------------------------------
+\section{Abstract}
+Write a research summary
+
+
+% -------------------------------------------------------------
+\section{CS 297 Results}
+% Concrete and specific as much as possible
+\begin{itemize}
+    \item Simulator of ...
+    \item Simulation results of ...
+    \item Paper ...
+\end{itemize}
+
+
+% -------------------------------------------------------------
+\section{Schedule}
+% At least, one deliverable item per two weeks
+
+\begin{table}[h!]
+  \begin{center}
+    % \caption{Your first table.}
+    \label{tab:table1}
+    \begin{tabular}{c|p{0.4\linewidth}|p{0.4\linewidth}}
+      \hline
+      \textbf{Due Date} & \textbf{Action Item} & \textbf{Deliverable}\\
+      \hline
+      Feb 7 & Implement the simulator code & Simulator for simple scenarios\\ 
+      Feb 21 & Run experiments with 256x256 images & Plotted Results\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+% -------------------------------------------------------------
+\section{Key Deliverables}
+% These items will be the milestones to check your completion of CS298
+% These listed here are the "products" you need to deliver by the deadline
+\subsection{Software}
+\begin{itemize}
+  \item sample
+\end{itemize}
+
+
+\subsection{Report}
+\begin{itemize}
+  \item sample
+\end{itemize}
+
+
+
+% -------------------------------------------------------------
+\section{Challenges and Innovations}
+% When you sell your research products, how do you appeal the novelty and technical advancement?
+
+
+% -------------------------------------------------------------
+\section{Related Works}
+% Write one short paragraph that explains the context of your project using at least FIVE reference papers. Do not cite random related papers. Make sure the five listed here are directly related and explain the importance of your project. (It's preferred to have around 10 papers. AND Do not write a lengthy paragraph! Be concise.)
+
+This paper \cite{9868090} does this and that, but it does not cover this aspect. That's why my project needs to fill the gap to realize this and that.
+
+\bibliographystyle{ieeetr}
+\bibliography{ref}
+
+\end{document}
