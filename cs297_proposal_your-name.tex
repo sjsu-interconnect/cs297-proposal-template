@@ -1,88 +1,84 @@
-\documentclass[11pt,onecolumn]{article}
+\documentclass[11pt,onecolumn]{sjsucs-proposal}
 
 \usepackage{geometry}
-\geometry{top=0.7in, bottom=1in, left=0.7in, right=0.7in}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
 
 \usepackage{graphicx}
-
-\usepackage{tikz}
-
-\usepackage[colorlinks = true, citecolor = blue]{hyperref}
 
 % math lib
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 
-% theorem
-\usepackage{amsthm}
-\theoremstyle{definition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{theorem}{Theorem}
-\newtheorem{assumption}{Assumption}
-\newtheorem{corollary}{Corollary}
-\newtheorem{problem}{Problem}
-\newtheorem{definition}{Definition}
-
-% operators
-\DeclareMathOperator*{\argmax}{arg\,max}
-\DeclareMathOperator*{\argmin}{arg\,min}
-\newcommand\ceiling[1]{\left\lceil #1 \right\rceil}
-
-% empty set
-\usepackage{amssymb}
-\let\emptyset=\varnothing
-
-% algorithms
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
-\renewcommand{\algorithmicensure}{\textbf{Output:}}
-
 
 \begin{document}
 
-\title{Title}
-\def\myname{Your Name}
-\def\adv{Dr. Genya Ishigaki}
-\def\advemail{genya.ishigaki@sjsu.edu}
+\title{JestScript - A Whimsical Dive into Humorous Programming}
+\def\myname{Student Name}
+
+% Advisor's information
+\def\adv{Dr. Donald Knuth}
+\def\advemail{sample@sjsu.edu}
+
+% Committee Member's Information 1
 \def\comone{Dr. Edsger W. Dijkstra}
 \def\comoneemail{sample@sjsu.edu}
+
+% Committee Member's Information 2
 \def\comtwo{Dr. Claude Shannon}
 \def\comtwoemail{sample@sjsu.edu}
-\date{CS 297 - Fall 2022}
+% Affiliation (if not SJSU CS regular faculty); Leave empty if SJSU CS regular faculty)
+\def\comtwoaffil{}
 
-
-\author{
-    \myname\\ 
-    \\
-    \textbf{Committee Members}\\
-    \adv\ (Advisor, \advemail)\\
-    \comone\ (\comoneemail)\\
-    \comtwo\ (\comtwoemail)
-}
+\def\semester{Fall 2023}
 
 \maketitle
 
 
 % -------------------------------------------------------------
 \section{Abstract}
-Write a research summary
+% Write a summary of your project and expected results and impact
+% The summary should include background, motivation, problem, method, and evaluation method.
+
+In the realm of code seriousness, JestScript emerges as a playful endeavor, infusing the traditionally stoic world of programming with humor. Motivated by the desire to bring joy to coding, JestScript presents a unique take on syntax, error messages, and debugging experiences.
+% 
+The motivation behind JestScript lies in challenging the stereotypical perception of coding as a dry and serious task. With a plethora of programming languages prioritizing functionality over fun, JestScript aims to provide developers with a light-hearted alternative, fostering a more enjoyable coding atmosphere.
+% 
+The problem JestScript addresses is the potential monotony and stress associated with programming, which can lead to burnout and decreased creativity. By introducing humor into the coding process, JestScript seeks to rejuvenate developers' enthusiasm and creativity, making programming not just a task but an engaging and enjoyable experience.
+% 
+The method employed involves the integration of comedic language constructs, pun-laden error messages, emoji-based variables, and randomized easter eggs. JestScript encourages developers to find amusement in their code, offering a new perspective on the coding journey.
+% 
+For evaluation, JestScript's success will be measured through developer surveys assessing the perceived enjoyment and creativity during coding sessions. Additionally, code analysis tools will gauge the impact of humor on the efficiency and clarity of the written code. Through this approach, JestScript aims to prove that humor has a valid place in the coding world, contributing to a more positive and innovative programming environment.
 
 
 % -------------------------------------------------------------
 \section{CS 297 Results}
-% Concrete and specific as much as possible
+
 \begin{itemize}
-    \item Simulator of ...
-    \item Simulation results of ...
-    \item Paper ...
+    \item JestScript Compiler: The JestScript compiler that translates JestScript code into executable instructions for the target platform.
+    \item JestScript Syntax Guide: A detailed guide documenting the JestScript syntax, language rules, and conventions for developers.
+    \item Emoji Support Module: A module enabling the use of emoji-based variables in JestScript, with documentation on supported emojis and guidelines.
+\end{itemize}
+
+% -------------------------------------------------------------
+\section{CS 298 Key Deliverables}
+% These items will be the milestones to check your completion of CS298
+% These listed here are the "products" you need to deliver by the deadline
+\subsection{Software}
+\begin{itemize}
+  \item JestScript Compiler: The JestScript compiler that translates JestScript code into executable instructions for the target platform.
+  \item JestScript Interpreter: An interpreter for JestScript, allowing developers to run JestScript code without compilation for quick testing and debugging.
+  \item Open-Source Repository: The public repository on a platform like GitHub containing the JestScript source code, documentation, and issue tracker.
 \end{itemize}
 
 
+\subsection{Report}
+\begin{itemize}
+  \item User Feedback Analysis Report: A report summarizing user feedback from testing phases, outlining areas of improvement and potential future enhancements.
+  \item Testing and Quality Assurance Reports: Regular reports summarizing the results of unit testing, code reviews, and efforts to address bugs and issues.
+\end{itemize}
+
 % -------------------------------------------------------------
 \section{Schedule}
-% At least, one deliverable item per two weeks
-
 \begin{table}[h!]
   \begin{center}
     % \caption{Your first table.}
@@ -91,43 +87,28 @@ Write a research summary
       \hline
       \textbf{Due Date} & \textbf{Action Item} & \textbf{Deliverable}\\
       \hline
-      Feb 7 & Implement the simulator code & Simulator for simple scenarios\\ 
-      Feb 21 & Run experiments with 256x256 images & Plotted Results\\
+      Feb 7 & Create a basic language specification document & Specification document\\ 
+      Feb 14 & Implement basic input/output functionality & Input/output functionality\\
       \hline
     \end{tabular}
   \end{center}
 \end{table}
 
 
-% -------------------------------------------------------------
-\section{Key Deliverables}
-% These items will be the milestones to check your completion of CS298
-% These listed here are the "products" you need to deliver by the deadline
-\subsection{Software}
-\begin{itemize}
-  \item sample
-\end{itemize}
-
-
-\subsection{Report}
-\begin{itemize}
-  \item sample
-\end{itemize}
-
-
 
 % -------------------------------------------------------------
 \section{Challenges and Innovations}
-% When you sell your research products, how do you appeal the novelty and technical advancement?
-
+\begin{itemize}
+  \item Adoption and Integration: Integrating humor into programming languages presents a challenge in terms of widespread adoption. Developers and organizations may be hesitant to adopt JestScript for serious projects, fearing potential disruptions to established workflows.
+  \item Balancing Humor and Functionality: Striking the right balance between humor and maintaining the essential functionality of a programming language is a delicate challenge. JestScript needs to ensure that the introduction of humor does not compromise the efficiency and reliability of the code produced.
+  \item Joyful Coding Experience: JestScript innovates by placing a strong emphasis on the emotional aspect of coding. It introduces a joyful and lighthearted coding experience, which, if successful, could inspire other languages to explore more creative and enjoyable approaches to programming.
+  \item Creative Expression through Emoji Variables: The use of emoji-based variables is an innovative way to encourage creative expression in code. This feature not only adds a visual component to the code but also allows developers to infuse personality and humor into their variable names, fostering a more expressive coding style.
+\end{itemize}
 
 % -------------------------------------------------------------
-\section{Related Works}
-% Write one short paragraph that explains the context of your project using at least FIVE reference papers. Do not cite random related papers. Make sure the five listed here are directly related and explain the importance of your project. (It's preferred to have around 10 papers. AND Do not write a lengthy paragraph! Be concise.)
-
-This paper \cite{9868090} does this and that, but it does not cover this aspect. That's why my project needs to fill the gap to realize this and that.
-
+\nocite{*} % if you add entries to ref.bib, all items will be shown.
 \bibliographystyle{ieeetr}
 \bibliography{ref}
+
 
 \end{document}
