@@ -1,0 +1,135 @@
+\documentclass[11pt,onecolumn]{sjsucs-proposal}
+
+% --------------------------
+% --------------------------
+% Set to 1 if you want to see an example. 
+% When you start writing your own, set to 0.
+\def\exampleflag{1} 
+% --------------------------
+% --------------------------
+
+\usepackage{geometry}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+\usepackage{graphicx}
+
+\usepackage{float}
+
+\usepackage{pgfgantt}
+
+% math lib
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+\begin{document}
+
+\if\exampleflag1
+  \input exampledoc
+\else
+
+% Title of your project
+\title{Your Project Title}
+
+% Student's name
+\def\myname{Your Name}
+
+% Advisor's information
+\def\adv{Your Advisor}
+\def\advemail{Your Advisor's Email}
+
+% Committee Member's Information 1
+\def\comone{Your Committee Member}
+\def\comoneemail{Your Committee Member's Email}
+
+% Committee Member's Information 2
+\def\comtwo{Your Committee Member}
+\def\comtwoemail{Your Committee Member's Email}
+% Affiliation (if not SJSU CS regular faculty); Leave empty if SJSU CS regular faculty)
+\def\comtwoaffil{}
+
+% CS 298/299 Semester and Year
+\def\semester{Semester}
+\def\year{Year}
+
+
+% Five to seven technical words that best describe your project (Keywords you use to search related works similar to your project on Google scholar)
+\def\keywords{Project keyword 1, Project keyword 2, ...}
+
+
+\maketitle % Do not remove
+
+
+% -----------
+\section{Introduction}
+% Introduction to the field
+Introduction to the field, 
+% Introduction to the specific area of the study
+Introduction to the specific area of the study
+
+\makekeywords % Do not remove
+
+% -----------
+\section{Problem Definition and Motivation}
+% What is a problem you are solving in your project? Why is the problem important to the research community or the public?
+What is a problem you are solving in your project? Why is the problem important to the research community or the public?
+
+% -----------
+\section{Results Achieved in CS 297}
+% List a few concrete items that you have implemented, written, or created in CS 297
+\begin{itemize}
+  \item Result 1
+  \item Result 2
+\end{itemize}
+
+
+% -----------
+\section{Expected Deliverables in CS 298/299}
+% List a few concrete items that you plan to implement, write, or create by the end of CS 298/299
+\begin{itemize}
+  \item Deliverable 1
+  \item Deliverable 2
+\end{itemize}
+
+
+% -----------
+\section{Timeline and Milestones for CS 298/299}
+% Define several milestones for your CS 298/299
+% Decide a schedule to complete the milestones
+
+\begin{figure}[H]
+  \centering
+  \begin{ganttchart}[y unit title=0.5cm,
+    y unit chart=0.5cm,
+    vgrid,hgrid, 
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3]{1}{20}
+  %labels
+  \gantttitle{January}{4} 
+  \gantttitle{February}{4} 
+  \gantttitle{March}{4} 
+  \gantttitle{April}{4} 
+  \gantttitle{May}{4} \\
+  %tasks
+  \ganttbar{Milestone 1}{1}{4} \\
+  \ganttbar{Milestone 2}{3}{8} \\
+  \ganttbar{Report Writing}{14}{17} \\
+  \ganttbar{Defense Preparation}{18}{19}
+  %relations 
+  % \ganttlink{elem0}{elem1} 
+  \end{ganttchart}
+\end{figure}
+
+% -----------
+\nocite{*} % if you add entries to ref.bib, all items will be shown.
+\bibliographystyle{ieeetr}
+{\small \bibliography{ref}}
+
+\fi
+\end{document}

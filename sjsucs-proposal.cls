@@ -8,11 +8,16 @@
 
 \setlength\itemsep{-10pt}
 
+\newcommand{\makekeywords}{
+    \vspace{0.5em}
+    \noindent\textbf{Keywords:} \textit{\keywords}
+}
+
 \renewcommand{\maketitle}{%
     {\centering
         Department of Computer Science\\
-        CS 298 Proposal\\
-        \semester
+        CS 298/299 Proposal\\
+        \semester\ \year
 
         \medskip
 
